@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.service-name {
+  @apply text-rose-600 uppercase block font-semibold text-sm tracking-widest;
+}
+
+.title {
+  @apply capitalize text-2xl sm:text-3xl font-semibold my-3;
+}
+
+.rotate {
+  transform: rotateX(180deg);
+}
+
+.team-card:hover :is(h2, p) {
+  color: #e11d48;
+}
+
+.team-card:hover .icons {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+input::placeholder {
+  color: #e11d48;
+}
+
+@keyframes playPluse {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(-50%);
+    opacity: 1;
+    width: 4rem;
+    height: 4rem;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(-50%);
+    opacity: 0;
+    width: 9rem;
+    height: 9rem;
+  }
+}
+
+.playButton {
+  animation: playPluse 1.5s ease-out infinite;
+}
+
+.scrollbar::-webkit-scrollbar {
+  height: 0;
+}
+/* css for hiring */
+.pg-section {
+  padding: 60px 0;
+}
+
+.sc-blog {
+  display: flex;
+  align-items: center;
+}
+
+.sc-whyus-cnt {
+  width: 100%;
+}
+
+.sc-title-sm {
+  margin-bottom: 20px;
+}
+
+.sc-job-offer {
+  margin-top: 40px;
+}
+
+.sc-job-offer-cnt {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sc-block {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.sc-block-l {
+  padding: 0;
+  flex: 1 1 50%;
+  max-width: 50%;
+}
+
+.sc-block-r {
+  padding: 20px;
+  flex: 1 1 50%;
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.block-img {
+  height: 100%;
+}
+
+.block-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.btn-orange {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.btn-orange:hover {
+  background-color: darkorange;
+  color: white;
+}
+
+/* General form styles */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #5c9ded;
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+.form-control-file {
+  display: block;
+  margin-top: 10px;
+}
+
+.text-white {
+  color: white;
+}
+
+/* Button styles */
+.btn-orange {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-orange:hover {
+  background-color: darkorange;
+  color: white;
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
